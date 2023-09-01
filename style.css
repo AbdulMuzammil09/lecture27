@@ -1,0 +1,107 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+}
+
+.container{
+ width: 100vw;
+ height: 100vh;
+ /* background-color: aqua; */
+ background-image: url(./bgimg.jpeg);
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.box{
+ width: 400px;
+ height: 550px;
+ border: transparent;
+ box-shadow: 0 0 20px gray;
+ background-color: aliceblue;
+ border-radius: 20px;
+
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ align-items: center;
+ gap: 25px; 
+}
+
+.box img{
+ width: 100%;
+ height: 30%;
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+}
+
+.container .box .boxtext{
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ align-items: center;
+ gap: 25px;
+ text-align: center;
+ width: 80%;
+}
+
+.container .box .amount{
+ width: 85%;
+ height: 10%;
+ background-color: rgba(72, 75, 243, 0.301);
+ border-radius: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+.amount .leftbox{
+ width: 50%;
+ display: flex;
+ align-items: center;
+ flex-wrap: wrap; 
+ justify-content: space-around;
+ 
+}
+.amount .leftbox .leftbox1{
+ width: 35px;
+}
+.amount .leftbox .leftbox2{
+ font-weight: 550;
+}
+.amount .rightbox a{
+ text-decoration: none;
+ color: rgb(16, 26, 35);
+ text-shadow: 0 -2px 5px rgba(0, 0, 0, 0.649);
+}
+.amount .rightbox a:hover{
+ color: blue;
+}
+
+.container #paymentbutton{
+width: 85%;
+ height: 50px;
+ border-radius: 10px;
+ border: transparent;
+ background-color: rgba(54, 54, 185, 0.979);
+ box-shadow: 0 29px 52px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20);
+ color: aliceblue;
+ font-size: 15px
+}
+.container #paymentbutton:hover{
+ background-color: rgba(0, 0, 0, 0.701);
+}
+
+.container .cancelbox a{
+ color:rgba(0, 0, 0, 0.656);
+ font-weight: bold;
+ text-decoration: none;
+ font-size: large;
+}
+.container .cancelbox a:hover{
+ color: black;
+}
+
+
